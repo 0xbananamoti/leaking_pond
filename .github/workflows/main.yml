@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   default:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: jfrog/setup-jfrog-cli@v3
         env:
