@@ -1,4 +1,4 @@
-name: my
+name: Push NPM Build to Artifactory
 on: push
 
 
