@@ -1,0 +1,18 @@
+name: my
+on: push
+
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jfrog/setup-jfrog-cli@v3
+        env:
+            JF_URL: https://soleng.jfrog.io/
+            JF_PROJECT: ghjfdemo
+        with:
+            oidc-provider-name: jfrog-github-oidc
