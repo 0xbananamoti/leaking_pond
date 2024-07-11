@@ -1,4 +1,4 @@
-name: Push NPM Build to Artifactory
+name: Sample Python GitHub
 on: push
 
 
@@ -16,3 +16,4 @@ jobs:
             JF_PROJECT: ghjfdemo
         with:
             oidc-provider-name: jfrog-github-oidc
+            version: 2.57.0
