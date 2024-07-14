@@ -20,6 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v3
         with:
           role-to-assume: arn:aws:iam::050446384457:role/bananamoti-dc-demo
+          role-session-name: samplerolesession
           aws-region: ${{ env.AWS_REGION }}
       - name: prepare files to upload
         run: |
